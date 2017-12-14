@@ -23,6 +23,15 @@ echo 'a = ' . $a . '<br/>';
 echo 'b = ' . $b . '<br/>';
 echo 'c = ' . $c . '<br/>';
 echo 'd = ' . $d . '<br/>';
-
+//
+$a = 5;
+$b = 2;
+$c = $a++;
+$d = $b--;
+echo 'a = ' . $a . '<br/>';
+echo 'b = ' . $b . '<br/>';
+echo 'c = ' . $c . '<br/>';
+echo 'd = ' . $d . '<br/>';
+//
 
 ?>
