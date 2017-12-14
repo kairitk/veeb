@@ -6,8 +6,16 @@
  * Time: 13:35
  */
 
-for($kord = 1; $kord <= 5; $kord++) {
-    echo 'värviline tekst<br />';
+for($rida = 1; $rida <= 5; $rida++) {
+    $varv = '#';
+    for($kord = 1; $kord <= 6; $kord++) {
+        $symbol = rand(0,9);
+        $varv = $varv.$symbol;
+    }
+    echo '<font color="'.$varv.'">'.
+        'värviline tekst'.
+    '</font>'.
+    '<br/>';
 }
 
 ?>
