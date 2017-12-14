@@ -9,4 +9,6 @@ $eesnimi = "Kairit";
 echo "Minu nimi on" . " Kairit";
 echo "Minu nimi on" . " " . $eesnimi;
 
+define('MINU_NIMI', 'Kairit');
+echo 'Minu nimi on' . MINU_NIMI . '<br />'
 ?>
