@@ -24,7 +24,7 @@ function yhendus(){
 }
 
 
-//päringu tegemine andmebaasist
+//andmebaasist päringu küsimise funktsioon
 function saadaParing($yhendus, $sql){
     $tulemus = mysqli_query($yhendus, $sql);
     if (!$tulemus){
@@ -39,7 +39,23 @@ function saadaParing($yhendus, $sql){
 }
 
 
-//
+//andmete saatmise funktsioon
+function annaAndmed($yhendus, $sql){
+    $tulemus = saadaParing($yhendus, $sql);
+    $andmed = array(); //massiiv, kuhu paneme päringuga saadud andmed
+    if ($tulemus != false){
+        while($rida = mysqli_fetch_assoc($tulemus)){
+            $andmed[] = $rida;
+        }
+    }
+    if (count($andmed) == 0){
+        return false;
+    } else {
+        //tagastame päringu andmetega täidetud funktsiooni
+        return $andmed;
+    }
+    
+}
 
 
 
