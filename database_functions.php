@@ -17,12 +17,29 @@ function yhendus(){
         echo mysqli_connent_error() . '<br/>';
         echo myqli_connect_errno() . '<br />';
         return false;
-    }else{
+    }else{   //kirjeldame situatsiooni, kui ühendus on saavutatud
         echo'Ühendus andmebaasi serveriga on olemas<br />';
         return $yhendus;
     }
 }
 
+
+//päringu tegemine andmebaasist
+function saadaParing($yhendus, $sql){
+    $tulemus = mysqli_query($yhendus, $sql);
+    if (!$tulemus){
+        echo 'Probleem päringug' . $sql . '<br />';
+        echo mysqli_error($yhendus) . '<br />';
+        echo mysqli_errno($yhendus) . '<br />';
+        return false;
+    } else{
+        echo 'Päring läks läbi<br />';
+        return true;
+    }
+}
+
+
+//
 
 
 
