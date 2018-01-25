@@ -14,6 +14,10 @@ $dbYhendus = yhendus();
 
 //koostame sql lause ja saadame andmebaasi
 $sql = 'SHOW TABLES';
-$sql = saadaParing($dbYhendus, $sql);
+$tulemus = annaAndmed($dbYhendus, $sql);
+// uurime tulemuse sisu test kujul
+echo '<pre>';
+print_r($tulemus);
+echo '</pre>';
 
 ?>

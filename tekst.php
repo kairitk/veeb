@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: käblik
  * Date: 25.01.2018
- * Time: 10:35
+ * Time: 10:49
  */
 
 class tekst
@@ -23,8 +23,3 @@ class tekst
         echo $this ->sone . '<br />';
     }
 } //klassi lõpp
-
-
-
-
-?>

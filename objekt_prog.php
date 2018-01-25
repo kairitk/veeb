@@ -3,8 +3,9 @@
  * Created by PhpStorm.
  * User: käblik
  * Date: 25.01.2018
- * Time: 10:35
+ * Time: 10:48
  */
+
 
 class tekst
 { //klassi algus
@@ -24,7 +25,4 @@ class tekst
     }
 } //klassi lõpp
 
-
-
-
-?>
+}

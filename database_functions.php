@@ -34,7 +34,7 @@ function saadaParing($yhendus, $sql){
         return false;
     } else{
         echo 'Päring läks läbi<br />';
-        return true;
+        return $tulemus;
     }
 }
 
@@ -54,7 +54,7 @@ function annaAndmed($yhendus, $sql){
         //tagastame päringu andmetega täidetud funktsiooni
         return $andmed;
     }
-    
+
 }
 
 
